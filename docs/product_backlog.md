@@ -30,10 +30,12 @@ And muestra partidos jugados, goles y diferencia de goles
 
 Historia de Usuario 2: Consulta de la tabla de posiciones
 
-Como aficionado de la liga,
-Quiero consultar la tabla de posiciones,
-Para que pueda conocer la clasificación actual de los equipos.
+**Como** aficionado de la liga,
+**Quiero** consultar la tabla de posiciones,
+**Para que pueda** conocer la clasificación actual de los equipos.
 Criterios de aceptación (Gherkin)
+
+```gherkin
 
 Scenario: Ver tabla de posiciones
 
@@ -41,15 +43,17 @@ Given que existen partidos registrados
 When el usuario entra a la sección "Tabla de posiciones"
 Then el sistema muestra los equipos ordenados por puntos
 And muestra partidos jugados, goles y diferencia de goles
-
+```
 
 Historia de Usuario 3: Registro de resultados
 
-Como árbitro de la liga,
-Quiero registrar el resultado de un partido,
-Para que la tabla de posiciones se actualice automáticamente.
+**Como** árbitro de la liga,
+**Quiero** registrar el resultado de un partido,
+**Para que** la tabla de posiciones se actualice automáticamente.
 
 Criterios de aceptación (Gherkin)
+
+```gherkin
 
 Scenario: Registrar resultado de un partido
 
